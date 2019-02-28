@@ -3,7 +3,7 @@ import boto3
 client = boto3.client('sts')
 
 arn = '...'
-sessions_name = 'web-identity-federation'
+session_name = 'web-identity-federation'
 token = '...'
 
 creds = client.assume_role_with_web_identity(
