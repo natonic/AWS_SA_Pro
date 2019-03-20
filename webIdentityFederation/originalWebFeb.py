@@ -2,8 +2,8 @@ import boto3
 
 client = boto3.client('sts')
 
-arn = '...'
-sessions_name = 'web-identity-federation'
+arn = 'arn:aws:iam:xxxxxxxxxxxx:role/WebIdFed_Amazon'
+session_name = 'web-identity-federation'
 token = '...'
 
 creds = client.assume_role_with_web_identity(
