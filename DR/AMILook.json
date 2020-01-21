@@ -109,7 +109,7 @@
         },
         "Handler": { "Fn::Join" : [ "", [{ "Ref": "ModuleName" },".handler"] ] },
         "Role": { "Fn::GetAtt" : ["LambdaExecutionRole", "Arn"] },        
-        "Runtime": "nodejs8.10",
+        "Runtime": "nodejs12.x",
         "Timeout": "30"
       }
     },
